@@ -9,3 +9,11 @@ Part 6: Add gestures: https://docs.expo.dev/tutorial/gestures/
 Part 7: Take a screen shot: https://docs.expo.dev/tutorial/screen...
 Part 8: Handle platform differences: https://docs.expo.dev/tutorial/platfo...
 Part 9: Configure the status bar: https://docs.expo.dev/tutorial/config...
+
+start server
+npx expo start 
+
+-create tabs
+create folder (tabs),
+then, define screens in _layout.tsx file,
+then, move required pages in to the (tabs) folder
