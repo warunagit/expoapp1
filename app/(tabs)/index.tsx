@@ -1,12 +1,17 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Image } from "expo-image";
+import { StyleSheet, View } from "react-native";
+
+const PlaceholderImage = require("../../assets/images/background-image.png");
 
 export default function Index() {
   return (
     <View
       style={styles.container}
     >
-      <Text style={styles.text}>WRUNA IS HERE</Text>
-    </View>
+      <view style={styles.imageContainer}>
+        <Image source={PlaceholderImage} style={styles.image}></Image>
+      </view>
+      </View>
   );
 }
 
@@ -17,12 +22,12 @@ const styles = StyleSheet.create({
     alignItems:"center",
     backgroundColor:"#25292e",
   },
-  text:{
-    color:'#fff',
+  image:{
+    width:320,
+    height:440,
+    borderRadius:18,
   },
-  button:{
-    fontSize:20,
-    textDecorationLine: "underline",
-    color: "#fff",
-  },
+  imageContainer:{
+    flex:1,
+  }
 });
