@@ -17,3 +17,4 @@ npx expo start
 create folder (tabs),
 then, define screens in _layout.tsx file,
 then, move required pages in to the (tabs) folder
+
