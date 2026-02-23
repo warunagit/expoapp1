@@ -1,17 +1,21 @@
-import { Image } from "expo-image";
+import Button from "@/components/Button";
+import ImageViewer from "@/components/ImageViewer";
 import { StyleSheet, View } from "react-native";
 
 const PlaceholderImage = require("../../assets/images/background-image.png");
 
 export default function Index() {
   return (
-    <View
-      style={styles.container}
-    >
+    <View style={styles.container}>
       <view style={styles.imageContainer}>
-        <Image source={PlaceholderImage} style={styles.image}></Image>
+        <ImageViewer imgSource={PlaceholderImage}/>
       </view>
+
+      <View style={styles.footerContainer}>
+        <Button label="Choose a photo" theme="primary"/>
+        <Button label="Use this photo"/>
       </View>
+    </View>
   );
 }
 
@@ -22,12 +26,11 @@ const styles = StyleSheet.create({
     alignItems:"center",
     backgroundColor:"#25292e",
   },
-  image:{
-    width:320,
-    height:440,
-    borderRadius:18,
-  },
   imageContainer:{
-    flex:1,
-  }
+    flex: 1,
+  },
+  footerContainer:{
+    flex: 1/3,
+    alignItems: "center",
+  },
 });
